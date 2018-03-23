@@ -12,8 +12,10 @@
     ],
     "activationEvents": [
         "onCommand:jblade.moveToFile",
-        "onCommand:jblade.jsEncode",
-        "onCommand:jblade.jsonEncode",
+        "onCommand:jblade.decodeJsQuotes",
+        "onCommand:jblade.encodeToQuotes",
+        "onCommand:jblade.encodeJsQuotes",
+        "onCommand:jblade.encodeJsonQuotes",
         "onCommand:jblade.insertNumbers0",
         "onCommand:jblade.insertNumbers1",
         "onCommand:jblade.toCamelCase",
@@ -29,11 +31,19 @@
                 "title": "JBlade: Move to file."
             },
             {
-                "command": "jblade.jsEncode",
+                "command": "jblade.decodeJsQuotes",
+                "title": "JBlade: Decode JavaScript string"
+            },
+            {
+                "command": "jblade.encodeToQuotes",
+                "title": "JBlade: Encode JavaScript string..."
+            },
+            {
+                "command": "jblade.encodeJsQuotes",
                 "title": "JBlade: Encode JavaScript string"
             },
             {
-                "command": "jblade.jsonEncode",
+                "command": "jblade.encodeJsonQuotes",
                 "title": "JBlade: Encode JSON string"
             },
             {

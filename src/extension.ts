@@ -1,17 +1,17 @@
 'use strict';
 import * as vscode from 'vscode';
 import moveToFile from './move-to-file';
-import quotesEncode from './quick-edits/quotes-encode'
+import quotes from './quick-edits/quotes'
 import casing from './quick-edits/casing';
 import numbering from './quick-edits/numbering'
 import joinBy from './quick-edits/join-by';
 
 export function activate(context: vscode.ExtensionContext) {
-    console.log('Congratulations, your extension "jblade" is now active!');
+    console.log('Congratulations, your extension "JBlade" is now active!');
 
     const commandHandlers: { [index: string]: () => void } = {
         moveToFile,
-        ...quotesEncode,
+        ...quotes,
         ...casing,
         ...numbering,
         ...joinBy
