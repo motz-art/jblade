@@ -58,7 +58,7 @@
             },
             {
                 "command": "jblade.joinBy",
-                "title": "JBlade: Join strings with separator"
+                "title": "JBlade: Join strings with colon"
             }
         ]
     },
