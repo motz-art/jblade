@@ -3,6 +3,7 @@ import * as vscode from 'vscode';
 import moveToFile from './move-to-file';
 import quotesEncode from './quick-edits/quotes-encode'
 import casing from './quick-edits/casing';
+import numbering from './quick-edits/numbering'
 import joinBy from './quick-edits/join-by';
 
 export function activate(context: vscode.ExtensionContext) {
@@ -12,6 +13,7 @@ export function activate(context: vscode.ExtensionContext) {
         moveToFile,
         ...quotesEncode,
         ...casing,
+        ...numbering,
         ...joinBy
     }
     

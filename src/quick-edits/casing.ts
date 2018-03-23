@@ -6,14 +6,6 @@ import * as uppercamelcase from 'uppercamelcase';
 
 export default {
 
-    insertNumbers0: function () {
-        replaceSelections((text, i) => `${text}${i}`);
-    },
-
-    insertNumbers1: function () {
-        replaceSelections((text, i) => `${text}${i + 1}`);
-    },
-
     toCamelCase: function () {
         replaceSelections(text => camelcase(text.replace(/[^0-9a-zA-Z]/g, '-')));
     },
