@@ -9,6 +9,8 @@
     "cSpell.words": [
         "camelcase",
         "decamelize",
+        "espree",
+        "estraverse",
         "jblade",
         "uppercamelcase"
     ]
