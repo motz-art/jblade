@@ -11,14 +11,54 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.moveToFile"
+        "onCommand:jblade.moveToFile",
+        "onCommand:jblade.jsEncode",
+        "onCommand:jblade.jsonEncode",
+        "onCommand:jblade.insertNumbers0",
+        "onCommand:jblade.insertNumbers1",
+        "onCommand:jblade.toCamelCase",
+        "onCommand:jblade.toPascalCase",
+        "onCommand:jblade.toCebabCase",
+        "onCommand:jblade.joinBy"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.moveToFile",
-                "title": "Move to file."
+                "command": "jblade.moveToFile",
+                "title": "JBlade: Move to file."
+            },
+            {
+                "command": "jblade.jsEncode",
+                "title": "JBlade: Encode JavaScript string"
+            },
+            {
+                "command": "jblade.jsonEncode",
+                "title": "JBlade: Encode JSON string"
+            },
+            {
+                "command": "jblade.insertNumbers0",
+                "title": "JBlade: Insert Zero (0) based numbers"
+            },
+            {
+                "command": "jblade.insertNumbers1",
+                "title": "JBlade: Insert one (1) based numbers"
+            },
+            {
+                "command": "jblade.toCamelCase",
+                "title": "JBlade: To Camel Case"
+            },
+            {
+                "command": "jblade.toPascalCase",
+                "title": "JBlade: To Pascal Case"
+            },
+            {
+                "command": "jblade.toCebabCase",
+                "title": "JBlade: To Cebab Case"
+            },
+            {
+                "command": "jblade.joinBy",
+                "title": "JBlade: Join strings with separator"
             }
         ]
     },
@@ -35,5 +75,15 @@
         "tslint": "^5.8.0",
         "@types/node": "^7.0.43",
         "@types/mocha": "^2.2.42"
+    },
+    "dependencies": {
+        "@types/camelcase": "^4.1.0",
+        "@types/decamelize": "^1.2.0",
+        "@types/uppercamelcase": "^3.0.0",
+        "camelcase": "^4.1.0",
+        "decamelize": "^2.0.0",
+        "espree": "^3.5.4",
+        "estraverse": "^4.2.0",
+        "uppercamelcase": "^3.0.0"
     }
 }
